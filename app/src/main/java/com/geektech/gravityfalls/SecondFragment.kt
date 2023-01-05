@@ -23,7 +23,8 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val character = arguments?.getSerializable(FirstFragment.CHARACTER) as Character
         binding.apply {
-            Glide.with(imgIv2).load(character.img).into(imgIv2)
+//            Glide.with(imgIv2).load(character.img).into(imgIv2)
+
             nameTv2.text = character.name
             ageTv2.text = character.age
 

@@ -23,10 +23,9 @@ data class CharacterAdapter(
     inner  class ViewHolder(private  val binding: FragmentItemBinding):RecyclerView.ViewHolder(binding.root){
         fun  bind(){
             val item = charList[adapterPosition]
-            binding.apply {
-                Glide.with(imgIv).load(item.img).into(binding.imgIv)
-                ageTv.text = item.age
-                nameTv.text = item.name}
+                Glide.with(binding.imgIv).load("https://images.squarespace-cdn.com/content/v1/59a1884ca803bb46c7993ddc/1504372132594-WGT166AOUNGIKXJRIOT0/GravityFalls.jpg").into(binding.imgIv)
+                binding.ageTv.text = item.age
+                binding.nameTv.text = item.name
 
             itemView.setOnClickListener {
                 onClick(adapterPosition)

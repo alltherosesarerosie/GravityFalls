@@ -10,7 +10,11 @@
         android:name="com.geektech.gravityfalls.FirstFragment"
         android:label="fragment_first"
         tools:layout="@layout/fragment_first"
-        />
+        >
+        <action
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
     <fragment
         android:id="@+id/secondFragment"
         android:name="com.geektech.gravityfalls.SecondFragment"

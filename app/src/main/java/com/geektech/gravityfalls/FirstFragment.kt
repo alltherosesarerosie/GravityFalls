@@ -35,10 +35,8 @@ class FirstFragment : Fragment() {
     }
 
     private fun onClick(position: Int){
-        binding.apply {
-            var character = Character(character[position].name, character[position].age, character[position].img)
-        }
-        findNavController().navigate(R.id.secondFragment, bundleOf(CHARACTER to character))
+        var charactrr = Character(character[position].name, character[position].age, character[position].img)
+        findNavController().navigate(R.id.secondFragment, bundleOf(CHARACTER to charactrr))
 
 
 
