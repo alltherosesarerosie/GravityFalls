@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="200dp"
+    android:layout_height="320dp"
+    tools:context=".ItemFragment"
+    android:layout_marginStart="100dp"
+    android:background="@drawable/hellour">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/img_iv"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+
+        />
+
+    <TextView
+        android:id="@+id/age_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="age"
+        android:textSize="20sp"
+        android:layout_marginTop="220dp"
+        android:layout_marginStart="20dp"
+        />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:textSize="26sp"
+        android:layout_marginTop="250dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="20dp"
+        />
+</FrameLayout>
